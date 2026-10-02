@@ -29,13 +29,15 @@ export default function RootLayout({
         {children}
         <footer className="site-footer">
           <div className="site-footer__inner">
-            <p>© {new Date().getFullYear()} LolerSwager · Independent community</p>
-                <nav className="site-footer__links" aria-label="Site links">
+            <p>
+              © {new Date().getFullYear()} LolerSwager · Independent community
+            </p>
+            <nav className="site-footer__links" aria-label="Site links">
               <Link href="/terms">Terms</Link>
               <Link href="/privacy">Privacy</Link>
               <Link href="/cookies">Cookies</Link>
               <Link href="/legal">Legal notice</Link>
-                  <Link href="/sitemap.xml">Sitemap</Link>
+              <Link href="/sitemap.xml">Sitemap</Link>
             </nav>
           </div>
         </footer>

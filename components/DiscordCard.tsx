@@ -41,7 +41,9 @@ export default async function DiscordCard({
 
       <span className="discord-action__online" aria-live="polite">
         <i aria-hidden="true" />
-        {onlineCount === undefined ? "Join the conversation" : `${onlineCount} online`}
+        {onlineCount === undefined
+          ? "Join the conversation"
+          : `${onlineCount} online`}
       </span>
 
       <a

@@ -33,9 +33,9 @@ export default function Cookies() {
         <section className="legal-section">
           <h2>Hosting and external services</h2>
           <p>
-            The hosting platform or security services may use strictly
-            necessary storage or similar technologies to deliver and protect
-            the site. Their presence and lifetime can depend on the production
+            The hosting platform or security services may use strictly necessary
+            storage or similar technologies to deliver and protect the site.
+            Their presence and lifetime can depend on the production
             configuration. When you follow the Discord invite, Discord applies
             its own cookie and privacy practices.
           </p>
@@ -66,8 +66,8 @@ export default function Cookies() {
       <aside className="legal-callout">
         Before launch, check the deployed site and hosting configuration for
         cookies and similar storage. If optional analytics, advertising, or
-        tracking are enabled, add a compliant opt-in consent mechanism and a
-        way to withdraw consent.
+        tracking are enabled, add a compliant opt-in consent mechanism and a way
+        to withdraw consent.
       </aside>
     </main>
   );

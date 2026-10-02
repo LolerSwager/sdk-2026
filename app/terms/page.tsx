@@ -23,11 +23,11 @@ export default function Terms() {
         <section className="legal-section">
           <h2>About this site</h2>
           <p>
-            LolerSwager is an independent community website with information
-            and an invitation to its Discord community.
-            The site does not currently offer purchases, paid subscriptions, or
-            user accounts. These terms apply to your use of this website;
-            Discord has separate terms for its service.
+            LolerSwager is an independent community website with information and
+            an invitation to its Discord community. The site does not currently
+            offer purchases, paid subscriptions, or user accounts. These terms
+            apply to your use of this website; Discord has separate terms for
+            its service.
           </p>
         </section>
 
@@ -35,8 +35,8 @@ export default function Terms() {
           <h2>Using the site</h2>
           <p>
             Use the site lawfully and do not attempt to disrupt, overload,
-            exploit, or gain unauthorized access to it. You are responsible
-            for your device and for complying with Discord&apos;s terms and
+            exploit, or gain unauthorized access to it. You are responsible for
+            your device and for complying with Discord&apos;s terms and
             community rules when you follow the invite.
           </p>
         </section>
@@ -76,19 +76,17 @@ export default function Terms() {
           <p>
             To the extent permitted by law, the operator is not responsible for
             outages, inaccurate activity counts, or issues caused by external
-            services. This does not exclude
-            liability where Danish or other mandatory consumer law does not
-            allow it to be excluded.
+            services. This does not exclude liability where Danish or other
+            mandatory consumer law does not allow it to be excluded.
           </p>
         </section>
 
         <section className="legal-section">
           <h2>Applicable law</h2>
           <p>
-            Danish law applies to these terms, subject to any mandatory
-            consumer protections and jurisdiction rules that apply to you.
-            These terms do not remove rights granted by applicable EU or Danish
-            law.
+            Danish law applies to these terms, subject to any mandatory consumer
+            protections and jurisdiction rules that apply to you. These terms do
+            not remove rights granted by applicable EU or Danish law.
           </p>
         </section>
 

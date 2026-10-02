@@ -40,13 +40,12 @@ export default function Privacy() {
             and requested page.
           </p>
           <p>
-            To show Discord activity counts, the site server requests the
-            public Discord widget response. It can include public member
-            identifiers and activity information; this site uses it to
-            calculate aggregate counts and does not display member names on
-            the homepage. Widget data may be cached briefly by the site
-            platform. This request is made by the site server, not directly by
-            your browser.
+            To show Discord activity counts, the site server requests the public
+            Discord widget response. It can include public member identifiers
+            and activity information; this site uses it to calculate aggregate
+            counts and does not display member names on the homepage. Widget
+            data may be cached briefly by the site platform. This request is
+            made by the site server, not directly by your browser.
           </p>
         </section>
 
@@ -54,9 +53,9 @@ export default function Privacy() {
           <h2>Purpose and legal basis</h2>
           <p>
             Request logs are used to deliver the site, prevent abuse, and keep
-              the service secure. Public Discord widget information is used to
-              provide the community counts you request by visiting the site.
-              Where personal data is involved, the intended basis is the operator&apos;s
+            the service secure. Public Discord widget information is used to
+            provide the community counts you request by visiting the site. Where
+            personal data is involved, the intended basis is the operator&apos;s
             legitimate interest in operating and securing this community site
             (GDPR Article 6(1)(f)), balanced against the rights of affected
             people.
@@ -71,8 +70,8 @@ export default function Privacy() {
             and privacy information. If you follow the Discord invite, Discord
             receives information such as your IP address and browser details
             directly. Provider processing locations and any international
-            transfer safeguards depend on the services and account
-            configuration in use.
+            transfer safeguards depend on the services and account configuration
+            in use.
           </p>
         </section>
 
@@ -94,10 +93,11 @@ export default function Privacy() {
             restrict personal data, to object to processing based on legitimate
             interests, and to receive portable data where applicable. Contact
             the operator through the community Discord to make a request. You
-              may also complain to the Danish Data Protection Agency (Datatilsynet)
-              at <a href="https://www.datatilsynet.dk/english">datatilsynet.dk</a>.
-              If your request concerns data held by Discord or the hosting
-              provider, you may need to contact that provider directly.
+            may also complain to the Danish Data Protection Agency
+            (Datatilsynet) at{" "}
+            <a href="https://www.datatilsynet.dk/english">datatilsynet.dk</a>.
+            If your request concerns data held by Discord or the hosting
+            provider, you may need to contact that provider directly.
           </p>
         </section>
 

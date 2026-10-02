@@ -26,7 +26,8 @@ export default function LegalNotice() {
           <p>Country: Denmark</p>
           <p>Website: LolerSwager.com</p>
           <p>
-            Contact: <a href="https://discord.com/invite/uaCRvZU">community Discord</a>
+            Contact:{" "}
+            <a href="https://discord.com/invite/uaCRvZU">community Discord</a>
           </p>
         </section>
 
@@ -43,21 +44,27 @@ export default function LegalNotice() {
         <section className="legal-section">
           <h2>Related policies</h2>
           <ul>
-            <li><a href="/terms">Terms of use</a></li>
-            <li><a href="/privacy">Privacy notice</a></li>
-            <li><a href="/cookies">Cookie notice</a></li>
+            <li>
+              <a href="/terms">Terms of use</a>
+            </li>
+            <li>
+              <a href="/privacy">Privacy notice</a>
+            </li>
+            <li>
+              <a href="/cookies">Cookie notice</a>
+            </li>
           </ul>
         </section>
       </div>
 
       <aside className="legal-callout">
-        <strong>Operator details are incomplete.</strong> Add the operator&apos;s
-        full legal name, a postal address, and a direct email address before
-        treating this page as publication-ready. Add a CVR number and any other
-        business disclosures if applicable. Whether Danish e-commerce and
-        consumer-information rules apply depends on the actual activity,
-        including whether it is offered commercially; get Denmark-specific
-        advice if the site is monetized or used for a business.
+        <strong>Operator details are incomplete.</strong> Add the
+        operator&apos;s full legal name, a postal address, and a direct email
+        address before treating this page as publication-ready. Add a CVR number
+        and any other business disclosures if applicable. Whether Danish
+        e-commerce and consumer-information rules apply depends on the actual
+        activity, including whether it is offered commercially; get
+        Denmark-specific advice if the site is monetized or used for a business.
       </aside>
     </main>
   );

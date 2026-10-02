@@ -4,7 +4,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="site-main home-layout">
-      <section className="home-announcement" aria-labelledby="announcement-title">
+      <section
+        className="home-announcement"
+        aria-labelledby="announcement-title"
+      >
         <Image
           src="/images/logo.svg"
           alt="LolerSwager logo"
