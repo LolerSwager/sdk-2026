@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
+import Link from "next/link";
+import NavLink from "@/components/(navigation)/NavLink";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <header className="p-4 bg-transparent flex justify-between">
-          <a href="">
+          <Link href="http://localhost:3000">
             <Image
               className="brightness-0 invert"
               src="/images/logo.svg"
@@ -38,7 +40,11 @@ export default function RootLayout({
               height={20}
               priority
             />
-          </a>
+          </Link>
+          <nav className="flex gap-4 p-4">
+            <NavLink href="/server/test">server</NavLink>
+            <NavLink href="/about">about</NavLink>
+          </nav>
         </header>
         {children}
 

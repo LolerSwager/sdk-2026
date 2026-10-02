@@ -1,10 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
+import CopyButton from "./ui/CopyButton";
 
 type props = {
   appId: number;
-  url: string;
-  ip: string;
-  port: number;
+  serverId: string;
 };
 
 type steamResponse = {
@@ -18,7 +18,14 @@ type steamResponse = {
   };
 };
 
-export default async function GameCard({ appId, url, ip, port }: props) {
+export default async function GameCard({
+  appId,
+  serverId,
+  subIp,
+  ip,
+  port,
+  password,
+}: props) {
   const SteamStoreDetails = await fetch(
     `https://store.steampowered.com/api/appdetails?appids=${appId}`,
   );
@@ -104,26 +111,29 @@ export default async function GameCard({ appId, url, ip, port }: props) {
           className="w-full h-auto"
         />
         <div className="flex justify-between items-center gap-2 flex-wrap  p-4 ">
-          {url && (
+          {/*  <Link
+            href={`server/${serverId}`}
+            className="py-2 px-4 border-2 border-zinc-700 rounded-md text-white font-bold cursor-pointer transition-colors duration-200 hover:bg-indigo-500 hover:shadow-lg hover:shadow-indigo-500/50 hover:border-transparent"
+          >
+            connect
+          </Link> */}
+
+          <span className="flex flex-wrap gap-4 ">
             <a
-              href={"https://" + url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="py-2 px-4 border-2 border-zinc-700 rounded-md text-white font-bold cursor-pointer transition-colors duration-200 hover:bg-indigo-500 hover:shadow-lg hover:shadow-indigo-500/50 hover:border-transparent"
+              href={`steam://connect/${ip}:${port}`}
+              className="w-fit bg-sky-500 p-2 rounded-md cursor-pointer flex gap-2 hover:bg-gray-800"
             >
-              {url}
+              connect
+              <Image
+                src="/images/steam.svg"
+                alt="icon"
+                width={24}
+                height={24}
+              />
             </a>
-          )}
-          {ip && (
-            <a
-              href={"steam://connect/" + ip + ":" + port}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="py-2 px-4 border-2 border-zinc-700 rounded-md text-white font-bold cursor-pointer transition-colors duration-200 hover:bg-indigo-500 hover:shadow-lg hover:shadow-indigo-500/50 hover:border-transparent"
-            >
-              {ip + ":" + port}
-            </a>
-          )}
+
+            <CopyButton copy={`${subIp}:${port}`} />
+          </span>
         </div>
       </div>
     </section>
