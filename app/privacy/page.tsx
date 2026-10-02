@@ -1,110 +1,121 @@
 import type { Metadata } from "next";
+import LegalBreadcrumb from "@/components/LegalBreadcrumb";
+import LegalHomeButton from "@/components/LegalHomeButton";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | SDK",
-  description: "Privacy information for LolerSwager.com.",
+  title: "Privacy notice | LolerSwager",
+  description: "How the LolerSwager community site handles personal data.",
 };
-
-const sections = [
-  {
-    title: "Information this site handles",
-    content: (
-      <>
-        <p>
-          This site does not ask you to create an account or submit personal
-          information through a form. Its pages may request public information
-          from Discord, such as server name and activity counts, and from Steam,
-          such as game details. Those requests are made by the site to display
-          its features.
-        </p>
-        <p>
-          When you visit, the hosting provider may process technical request
-          data such as your IP address, browser type, and the time of the
-          request to deliver and secure the site. The provider&apos;s own
-          privacy terms explain how it handles that information.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Third-party services",
-    content: (
-      <p>
-        Discord and Steam are independent services. If you follow a link to
-        them, or use a feature that requests their data, they may receive
-        information as described in their own privacy policies. This site does
-        not control their data practices.
-      </p>
-    ),
-  },
-  {
-    title: "Cookies and analytics",
-    content: (
-      <p>
-        The site currently does not use analytics or advertising trackers, and
-        its application code does not set cookies for tracking. Hosting or
-        third-party services may use their own necessary technologies when you
-        access their services.
-      </p>
-    ),
-  },
-  {
-    title: "Storage and security",
-    content: (
-      <p>
-        The site does not provide an account or profile feature. Technical logs
-        may be retained by the hosting provider for its operational and security
-        purposes; retention depends on that provider. No internet transmission
-        or storage method can be guaranteed completely secure.
-      </p>
-    ),
-  },
-  {
-    title: "Children and policy changes",
-    content: (
-      <p>
-        This site is not intended to collect personal information from children.
-        This policy may be updated as the site changes; the date at the top
-        indicates when it was last revised.
-      </p>
-    ),
-  },
-  {
-    title: "Contact",
-    content: (
-      <p>
-        For privacy questions, contact the site operator through the Discord
-        community link on the home page.
-      </p>
-    ),
-  },
-];
 
 export default function Privacy() {
   return (
-    <main className="mx-auto w-full max-w-3xl px-6 py-12 md:py-16">
-      <header className="mb-10 border-b border-zinc-300 pb-8 dark:border-zinc-700">
-        <p className="mb-3 font-mono text-sm uppercase text-zinc-500">
-          LolerSwager.com
-        </p>
-        <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-          Privacy policy
-        </h1>
-        <p className="mt-4 text-sm text-zinc-500">
-          Last updated: October 2, 2026
-        </p>
+    <main className="legal-page">
+      <header className="legal-page__header">
+        <LegalBreadcrumb />
+        <div className="legal-page__title-row">
+          <h1>Privacy notice</h1>
+          <LegalHomeButton />
+        </div>
+        <p>Last updated: October 2, 2026</p>
       </header>
 
-      <div className="space-y-8">
-        {sections.map(({ title, content }) => (
-          <section className="space-y-3" key={title}>
-            <h2 className="text-xl font-semibold">{title}</h2>
-            <div className="space-y-3 leading-7 text-zinc-700 dark:text-zinc-300">
-              {content}
-            </div>
-          </section>
-        ))}
+      <div className="legal-page__sections">
+        <section className="legal-section">
+          <h2>Who is responsible</h2>
+          <p>
+            The site operator, known online as LolerSwager and based in Denmark,
+            is responsible for personal data processed through this site. The
+            operator&apos;s full legal identity and postal address have not yet
+            been supplied. Contact is currently available through the
+            <a href="https://discord.com/invite/uaCRvZU"> community Discord</a>.
+          </p>
+        </section>
+
+        <section className="legal-section">
+          <h2>Data this site handles</h2>
+          <p>
+            The site has no account system, contact form, or user profile. The
+            hosting provider may process standard request and security logs,
+            which can include your IP address, request time, browser details,
+            and requested page.
+          </p>
+          <p>
+            To show Discord activity counts, the site server requests the
+            public Discord widget response. It can include public member
+            identifiers and activity information; this site uses it to
+            calculate aggregate counts and does not display member names on
+            the homepage. Widget data may be cached briefly by the site
+            platform. This request is made by the site server, not directly by
+            your browser.
+          </p>
+        </section>
+
+        <section className="legal-section">
+          <h2>Purpose and legal basis</h2>
+          <p>
+            Request logs are used to deliver the site, prevent abuse, and keep
+              the service secure. Public Discord widget information is used to
+              provide the community counts you request by visiting the site.
+              Where personal data is involved, the intended basis is the operator&apos;s
+            legitimate interest in operating and securing this community site
+            (GDPR Article 6(1)(f)), balanced against the rights of affected
+            people.
+          </p>
+        </section>
+
+        <section className="legal-section">
+          <h2>Providers and international processing</h2>
+          <p>
+            The site is hosted on Vercel, and Discord provides the public
+            community data shown here. Each provider acts under its own terms
+            and privacy information. If you follow the Discord invite, Discord
+            receives information such as your IP address and browser details
+            directly. Provider processing locations and any international
+            transfer safeguards depend on the services and account
+            configuration in use.
+          </p>
+        </section>
+
+        <section className="legal-section">
+          <h2>Retention</h2>
+          <p>
+            The site does not maintain user accounts or a profile database.
+            Short-lived public widget responses may be cached to serve the
+            homepage. Hosting and security log retention is controlled by the
+            hosting provider and its current configuration; the operator should
+            review and set the shortest period appropriate for security needs.
+          </p>
+        </section>
+
+        <section className="legal-section">
+          <h2>Your rights</h2>
+          <p>
+            Under the GDPR, you may have rights to access, correct, erase, or
+            restrict personal data, to object to processing based on legitimate
+            interests, and to receive portable data where applicable. Contact
+            the operator through the community Discord to make a request. You
+              may also complain to the Danish Data Protection Agency (Datatilsynet)
+              at <a href="https://www.datatilsynet.dk/english">datatilsynet.dk</a>.
+              If your request concerns data held by Discord or the hosting
+              provider, you may need to contact that provider directly.
+          </p>
+        </section>
+
+        <section className="legal-section">
+          <h2>Changes</h2>
+          <p>
+            This notice may change when the site or its providers change. The
+            date above shows the latest revision.
+          </p>
+        </section>
       </div>
+
+      <aside className="legal-callout">
+        Before relying on this notice, the operator must add a full legal name,
+        postal address, and direct contact email, confirm the hosting log
+        retention and data-region settings, and verify that the described data
+        flows still match the deployed site.
+      </aside>
     </main>
   );
 }

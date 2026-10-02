@@ -11,10 +11,13 @@ type NavLinkProps = {
 
 export default function NavLink({ href, children }: NavLinkProps) {
   const pathname = usePathname();
+  const isCurrentPage = pathname === href;
+
   return (
     <Link
       href={href}
-      className={`${pathname === href ? "text-purple-600" : "text-gray-700"}`}
+      className="site-nav__link"
+      aria-current={isCurrentPage ? "page" : undefined}
     >
       {children}
     </Link>
