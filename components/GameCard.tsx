@@ -5,6 +5,9 @@ import CopyButton from "./ui/CopyButton";
 type props = {
   appId: number;
   serverId: string;
+  subIp: string;
+  ip: string;
+  port: number;
 };
 
 type steamResponse = {
@@ -24,7 +27,6 @@ export default async function GameCard({
   subIp,
   ip,
   port,
-  password,
 }: props) {
   const SteamStoreDetails = await fetch(
     `https://store.steampowered.com/api/appdetails?appids=${appId}`,
